@@ -1,401 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- mobile metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="viewport" content="initial-scale=1, maximum-scale=1">
-<!-- site metas -->
-<title>ADsiter</title>
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">	
-<!-- bootstrap css -->
-<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-<!-- style css -->
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- Responsive-->
-<link rel="stylesheet" href="css/responsive.css">
-<!-- fevicon -->
-<link rel="icon" href="images/fevicon.png" type="image/gif" />
-<!-- Scrollbar Custom CSS -->
-<link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
-<!-- Tweaks for older IEs-->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
-<!-- owl stylesheets --> 
-<link rel="stylesheet" href="css/owl.carousel.min.css">
-<link rel="stylesheet" href="css/owl.theme.default.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zomato - Largest Food Delivery network</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Merriweather:300,300italic,regular,italic,700,700italic,900,900italic"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__brand">
+          <img src="./assets/logo.png" alt="logo" class="brand__logo" />
+        </div>
+        <div class="navbar__nav__items">
+          <div class="nav__item">
+            <button class="button__primary hide__mobile">Order Food</button>
+            <button
+              class="button__primary hamburger__menu mobile__only"
+              id="hamburgermenu"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="mobile__navbar__items mobile__only hamburger__menu__close">
+        <ul>
+          <li class="nav__item">Products</li>
+          <li class="nav__item">Restaurants</li>
+          <li class="nav__item">Pricing</li>
+          <li class="nav__item">About Us</li>
+        </ul>
 
-</head>
-<body>
-	<!-- header section start -->
-	<div class="header_section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 col-lg-3">
-					<div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
-				</div>
-				<div class="col-sm-6">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                        </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                           <a class="nav-item nav-link" href="index.html">Home</a>
-                           <a class="nav-item nav-link" href="browse ads.html">Browse ads</a>
-                           <a class="nav-item nav-link" href="about.html">About</a>
-                           <a class="nav-item nav-link" href="clients.html">Clients</a>
-                           <a class="nav-item nav-link" href="contact.html">Contact</a>
-                        </div>
-                    </div>
-                    </nav>
-				</div>
-				<div class="col-sm-6 col-lg-3">
-					<div class="search_main">
-                    <button class="submit_bt"><a href="#"><span class="doctor"><img src="images/doctor-icon.png"></span>Submit ads</a></button>
-				    </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- header section end -->
-	<!-- banner section start -->
-	<div class="layout_padding banner_section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1 class="banner_taital">All You Need Is Here & Classified</h1>
-					<p class="browse_text">Browse from more than 15,000,000 adverts while new ones come on daily bassis</p>
-					<div class="banner_bt">
-						<button class="read_bt">Read More</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- banner section end -->
-	<!-- search box start -->
-	<div class="container">
-		<div class="search_box">
-			<div class="row">
-				<div class="col-sm-3">
-					<div class="form-group">
-                        <input type="text" class="email_boton" placeholder="Search for" name="Email">
-                    </div>
-				</div>
-				<div class="col-sm-3">
-					<div class="form-group">
-                        <input type="text" class="email_boton" placeholder="Loction in" name="Email">
-                    </div>
-				</div>
-				<div class="col-sm-3">
-					<div class="form-group">
-                        <input type="text" class="email_boton" placeholder="category" name="Email">
-                    </div>
-				</div>
-				<div class="col-sm-3">
-					<div class="form-group">
-                        <button class="search_bt">Search</button>
-                    </div>
-				</div>
-				<div class="fashion_menu">
-                    	<ul>
-                    		<li class="active"><a href="#">Auto Mobile</a></li>
-                    		<li><a href="#">Fashion</a></li>
-                    		<li><a href="#">Mother& Child</a></li>
-                    		<li><a href="#">Jobs</a></li>
-                    		<li><a href="#">Real estate</a></li>
-                    		<li><a href="#">Pets</a></li>
-                    		<li><a href="#">Sport</a></li>
-                    		<li><a href="#">More</a></li>
-                    	</ul>
-                    </div>
-			</div>
-		</div>
-	</div>
-	<!-- search box end -->
-	<!-- section PROMOTED start -->
-	<div class=" layout_padding promoted_sectipon">
-		<div class="container">
-			<h1 class="promoted_text">PROMOTED <span style="border-bottom: 5px solid #4bc714;">ADS</span></h1>
-			<div class="images_main">
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="images"><img src="images/img-1.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Mobiles</a></button>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="images"><img src="images/img-2.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Cyicals</a></button>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="images"><img src="images/img-3.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Cars</a></button>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div class="images"><img src="images/img-4.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Laptops</a></button>
-					</div>
-				</div>
-			</div>
-			<div class="images_main">
-				<div class="row">
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div><img src="images/img-1.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Mobiles</a></button>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div><img src="images/img-2.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Cyicals</a></button>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div><img src="images/img-3.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Cars</a></button>
-					</div>
-					<div class="col-sm-6 col-md-6 col-lg-3">
-						<div><img src="images/img-4.png" style="width: 100%;"></div>
-						<button class="promoted_bt">PROMOTED</button>
-						<div class="eye-icon"><img src="images/eye-icon.png"><span class="like-icon"><img src="images/like-icon.png"></span></div>
-						<div class="numbar_text">30<span class="like-icon">01</span></div>
-						<button class="mobile_bt"><a href="#">Laptops</a></button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- section PROMOTED end -->
-	<!-- section POPULAR STORES start -->
-    <div class="layout_padding popular_section">
-    	<div class="container">
-    		<h1 class="popular_taital">POPULAR <span style="border-bottom: 5px solid #4bc714;">STORES</span></h1>
-    		<div id="main_slider" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="popular_section_2">
-    			    <div class="slider_img"><img src="images/img-5.png" style="max-width: 100%;"></div>
-    			        <h2 class="electronic_text">Electronic shop</h2>
-    			        <p class="contrary_text">Contrary to popular belief, Lorem 
-                        Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
-                        <button class="view_bt"><a href="#">VIEW ADS</a></button>
-    		        </div>
-                </div>
-            <div class="carousel-item">
-                <div class="popular_section_2">
-    			    <div class="slider_img"><img src="images/img-5.png"style="max-width: 100%;"></div>
-    			        <h2 class="electronic_text">Electronic shop</h2>
-    			        <p class="contrary_text">Contrary to popular belief, Lorem 
-                        Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
-                        <button class="view_bt"><a href="#">VIEW ADS</a></button>
-    		        </div>
-                </div>
-            <div class="carousel-item">
-                <div class="popular_section_2">
-    			    <div class="slider_img"><img src="images/img-5.png"style="max-width: 100%;"></div>
-    			    <h2 class="electronic_text">Electronic shop</h2>
-    			    <p class="contrary_text">Contrary to popular belief, Lorem 
-                    Ipsum is not simply random text. It has roots in a piece of classical Latin literature from</p>
-                    <button class="view_bt"><a href="#">VIEW ADS</a></button>
-    		    </div>
+        <div class="nav__item">
+          <button class="button__primary">Order Food</button>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <section class="hero__container">
+        <div class="hero__image__container">
+          <img src="./assets/hero.jpg" alt="hero image" class="hero__image" />
+          <img
+            src="./assets/svg/heroShape.svg"
+            alt="hero image shape"
+            class="hero__image__shape"
+          />
+          <img
+            src="./assets/svg/herobgpattren.svg"
+            alt="hero image shape"
+            class="hero__image__pattren"
+          />
+        </div>
+        <div class="hero__description">
+          <h1 class="hero__text">
+            Order food from favourite restaurants near you.
+          </h1>
+          <button class="button__primary">Order Now</button>
+        </div>
+      </section>
+
+      <section class="video__footage__container">
+        <div class="video__footage">
+          <iframe
+            src="https://player.vimeo.com/video/323795266"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture"
+            allowfullscreen
+            class="chef__video"
+          ></iframe>
+        </div>
+        <div class="video__footage__text">
+          <p>
+            Your food will be prepared safely with an experienced chef, without
+            compromising on the quality and hygiene.
+          </p>
+        </div>
+      </section>
+
+      <section class="food__list__container">
+        <h1 class="text-xl">Explore our menu</h1>
+        <div class="food__list__container__diagonal"></div>
+
+        <div class="food__menu__card__list">
+          <div class="food__menu__card">
+            <img
+              src="./assets/burger.jpg"
+              alt="burger"
+              class="food__menu__card__image"
+            />
+            <div class="food__menu__card__details">
+              <h4 class="text-lg"><strong>Burgers</strong></h4>
+              <p>
+                Burger King, Mcdonalds, Burger Place
+                <span style="color: red">+3</span>
+              </p>
             </div>
+          </div>
+          <div class="food__menu__card food__menu__card__move__up">
+            <img
+              src="./assets/pizza.jpg"
+              alt="pizza"
+              class="food__menu__card__image"
+            />
+            <div class="food__menu__card__details">
+              <h4 class="text-lg"><strong>Pizza</strong></h4>
+              <p>
+                Pizza Hut, Domino's Pizza
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
+          <div class="food__menu__card">
+            <img
+              src="./assets/iceCream.jpg"
+              alt="iceCream"
+              class="food__menu__card__image"
+            />
+            <div class="food__menu__card__details">
+              <h4 class="text-lg"><strong>Ice Creams</strong></h4>
+              <p>
+                Baskin Robins, Ibaco
+                <span style="color: red">+3</span>
+              </p>
+            </div>
+          </div>
         </div>
-        <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-left"></i>
-        </a>
-        <a class="carousel-control-next" href="#main_slider" role="button" data-slide="prev">
-            <i class="fa fa-angle-right"></i>
-        </a>
+        <div class="food__list__view__more">View More</div>
+      </section>
+      <section class="restaurant__list__container">
+        <div class="restaurant__list__text">
+          <h4 class="text-xl">Order From 100s of restaurants</h4>
+        </div>
+        <div class="restaurant__list__images__container">
+          <div class="restaurant__list__row_1">
+            <div>
+              <img
+                src="./assets/restaurant1.jpg"
+                alt="restaurant1"
+                class="restaurant1"
+              />
+            </div>
+            <img
+              src="./assets/restaurant2.jpg"
+              alt="restaurant2"
+              class="restaurant2"
+            />
+          </div>
+          <div class="restaurant__list__row_2">
+            <img
+              src="./assets/restaurant3.jpg"
+              alt="restaurant3"
+              class="restaurant3"
+            />
+            <img
+              src="./assets/restaurant4.jpg"
+              alt="restaurant4"
+              class="restaurant4"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="email__subcribe__container">
+        <div>
+          <h1 class="text-xl">Stay Updated</h1>
+          <div class="email__subcribe__input__field">
+            <div>
+              <input
+                type="email"
+                placeholder="email@email.com"
+                class="email__input"
+              />
+            </div>
+            <button class="button__primary">Get Updates</button>
+          </div>
+        </div>
+      </section>
 
-    </div>
-    </div>
-    </div>
-	<!-- section POPULAR STORES end -->
-	<!-- about section start -->
-    <div class="layout_padding about_section">
-    	<div class="container">
-    		<div class="row">
-    			<div class="col-sm-12">
-    				<h1 class="about_taital">About Our Classified ads</h1>
-    				<p class="lorem_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-	<!-- about section end -->
-	<!-- client section start -->
-    <div class="layout_padding clients_section">
-    	<div class="container">
-    		<div id="client_slide" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#client_slide" data-slide-to="0" class="active"></li>
-    <li data-target="#client_slide" data-slide-to="1"></li>
-    <li data-target="#client_slide" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <div class="row">
-    			<div class="col-sm-12">
-    				<h1 class="promoted_text">CLIENTS <span style="border-bottom: 5px solid #4bc714;">REVIEW</span></h1>
-    				<div class="client_img"><img src="images/client-img.png"></div>
-    				<h1 class="client_text">JHON DUE</h1>
-    				<p class="adiser_text">(adiser)</p>
-    				<p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
-    			</div>
-    		</div>
-    </div>
-    <div class="carousel-item">
-      <div class="row">
-    			<div class="col-sm-12">
-    				<h1 class="promoted_text">CLIENTS <span style="border-bottom: 5px solid #4bc714;">REVIEW</span></h1>
-    				<div class="client_img"><img src="images/client-img.png"></div>
-    				<h1 class="client_text">JHON DUE</h1>
-    				<p class="adiser_text">(adiser)</p>
-    				<p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
-    			</div>
-    		</div>
-    </div>
-    <div class="carousel-item">
-      <div class="row">
-    			<div class="col-sm-12">
-    				<h1 class="promoted_text">CLIENTS <span style="border-bottom: 5px solid #4bc714;">REVIEW</span></h1>
-    				<div class="client_img"><img src="images/client-img.png"></div>
-    				<h1 class="client_text">JHON DUE</h1>
-    				<p class="adiser_text">(adiser)</p>
-    				<p class="long_text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to</p>
-    			</div>
-    		</div>
-        </div>
-    </div>
-    </div>
-    </div>
-    </div>
-	<!-- client section end -->
-	<!-- contact section start -->
-    <div class="contact_section layout_padding">
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-md-6">
-                    <div class="input_main">
-                       <div class="container">
-                          <form action="/action_page.php">
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Your Name" name="Name">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Email" name="Email">
-                            </div>
-                            <div class="form-group">
-                              <input type="text" class="email-bt" placeholder="Phone" name="Email">
-                            </div>
-                            <form action="/action_page.php">
-                                <div class="form-group">
-                                  <textarea class="massage-bt" placeholder="Massage" rows="5" id="comment" name="text"></textarea>
-                                </div>
-                            </form>
-                          </form>
-                       </div> 
-                    </div>
-                </div>
-    			<div class="col-md-6">
-                    <div class="map-responsive">
-                        <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyA0s1a7phLN0iaD6-UE7m4qP-z21pH0eSc&q=Eiffel+Tower+Paris+France" width="600" height="450" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
-                    </div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
-	<!-- contact section end -->
-	<!-- footer section start -->
-	<div class="layout_padding footer_section">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-6 col-md-6 col-lg-3">
-					<div><img src="images/footer-logo.png"></div>
-					<p class="dolor_text">dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et sdolor sit amet,</p>
-				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
-					<h1 class="quick_text">Quick links</h1>
-					<div class="chevron_arrow"><img src="images/chevron-arrow.png"><span class="padding-left">Join Us</span></div>
-					<div class="chevron_arrow"><img src="images/chevron-arrow.png"><span class="padding-left">Maintenance</span></div>
-					<div class="chevron_arrow"><img src="images/chevron-arrow.png"><span class="padding-left">Language Packs</span></div>
-					<div class="chevron_arrow"><img src="images/chevron-arrow.png"><span class="padding-left">LearnPress</span></div>
-					<div class="chevron_arrow"><img src="images/chevron-arrow.png"><span class="padding-left">Release Status</span></div>
-				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
-					<h1 class="subscribe_text">Subcribe email</h1>
-					<p class="ipsum_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</p>
-					<input type="text" class="email_text" placeholder="Your Email" name="Name">
-					<button class="submit_text">Submit</button>
-				</div>
-				<div class="col-sm-6 col-md-6 col-lg-3">
-					<h1 class="quick_text">Contact Us</h1>
-					<div class="map_flag"><img src="images/map-flag.png"><span class="padding-left">London 145 United Kingdom</span></div>
-					<div class="dolor_text"><img src="images/email-icon.png"><span class="padding-left">adsiter@gmail.com</span></div>
-					<div class="dolor_text"><img src="images/phone-icon.png"><span class="padding-left">+12586954775</span></div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- footer section end -->
-	<!-- copyright section start -->
-    <div class="copyright">
-    	<p class="copyright_text">2019 All Rights Reserved. Design By <a href="https://html.design"> Free Html Templates</p>
-    </div>
-	<!-- copyright section end -->
-      <!-- Javascript files-->
-      <script src="js/jquery.min.js"></script>
-      <script src="js/popper.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
-      <script src="js/jquery-3.0.0.min.js"></script>
-      <script src="js/plugin.js"></script>
-      <!-- sidebar -->
-      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="js/custom.js"></script>
-      <!-- javascript --> 
-      <script src="js/owl.carousel.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script>
-         $(document).ready(function(){
-         $(".fancybox").fancybox({
-         openEffect: "none",
-         closeEffect: "none"
-         });
-         
-         $(".zoom").hover(function(){
-         
-         $(this).addClass('transition');
-         }, function(){
-         
-         $(this).removeClass('transition');
-         });
-         });
-         
-      </script> 
-    
-</body>
+      <section class="quote__container">
+        <div class="quote_image_overlay"></div>
+        <h3 class="quote_image_text">
+          When a man's stomach is full it makes no difference whether he is rich
+          or poor.
+        </h3>
+      </section>
+    </main>
+    <footer>
+      <img src="./assets/logo.png" alt="logo" />
+      <ul>
+        <li>Pricing</li>
+        <li>Terms and condition</li>
+        <li>Partnership</li>
+        <li>Career</li>
+        <li>Contact</li>
+      </ul>
+    </footer>
+    <script>
+      const hamburgermenu = document.getElementById("hamburgermenu");
+      const mobileNavDropDown = document.querySelector(
+        ".mobile__navbar__items"
+      );
+      window.addEventListener("click", () => {
+        if (mobileNavDropDown.classList.contains("hamburger__menu__close"))
+          return mobileNavDropDown.classList.remove("hamburger__menu__close");
+        return mobileNavDropDown.classList.add("hamburger__menu__close");
+      });
+    </script>
+  </body>
 </html>
