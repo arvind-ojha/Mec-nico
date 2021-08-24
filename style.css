@@ -29,7 +29,16 @@ section {
 }
 
 /* Custom */
-
+#aaa {
+  width: 30%;
+  height: 30%;
+  filter: brightness(0) invert(1);
+}
+#avc {
+  margin: 30px;
+  margin-left: 60px;
+  padding-left: 100px;
+}
 .container {
   width: 100%;
   padding-right: 15px;
@@ -108,7 +117,8 @@ section {
 }
 
 .brand__logo {
-  width: 100%;
+  width: 150%;
+  height: 120%;
 }
 
 .hero__container {
