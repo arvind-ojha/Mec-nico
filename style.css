@@ -33,7 +33,7 @@ section {
   width: 50%;
   height: 50%;
   filter: brightness(0) invert(1);
-  float: right;
+  float: none;
   margin-right: 30%;
   margin-bottom: 2%;
 }
