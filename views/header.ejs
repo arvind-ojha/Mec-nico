@@ -20,7 +20,7 @@
         <div class="navbar__nav__items">
           <ul class="nav navbar-nav navbar-right">
             <li class="nav__item" style="float: right;">
-               <form action="/signup"> <button class="button__primary hide__mobile">Login/Signup</button>
+               <form action="/signup" method="GET"> <button class="button__primary hide__mobile" name="type" value="retailer">Retailer SignIn</button></form>
                 <button
                   class="button__primary hamburger__menu mobile__only"
                   id="hamburgermenu"
@@ -28,7 +28,14 @@
                   <div></div>
                   <div></div>
                   <div></div>
-                </button></form>
+                </button>
+            </li>
+            <li class="nav__item" style="float: right;">
+              <form action="/signup" method="GET"> <button class="button__primary hide__mobile" name="type" value="customer">Customer SignIn</button>
+                 <div></div>
+                 <div></div>
+                 <div></div>
+               </button></form>
             </li>
           </ul>
         </div>

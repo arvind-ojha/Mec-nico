@@ -85,7 +85,10 @@ input {
 	outline: none;
 	border: none;
 }
-
+select {
+  outline: none;
+  border: none;
+}
 textarea {
   outline: none;
   border: none;
@@ -94,11 +97,19 @@ textarea {
 textarea:focus, input:focus {
   border-color: transparent !important;
 }
+textarea:focus, select:focus {
+  border-color: transparent !important;
+}
 
 input:focus::-webkit-input-placeholder { color:transparent; }
 input:focus:-moz-placeholder { color:transparent; }
 input:focus::-moz-placeholder { color:transparent; }
 input:focus:-ms-input-placeholder { color:transparent; }
+
+select:focus::-webkit-input-placeholder { color:transparent; }
+select:focus:-moz-placeholder { color:transparent; }
+select:focus::-moz-placeholder { color:transparent; }
+select:focus:-ms-input-placeholder { color:transparent; }
 
 textarea:focus::-webkit-input-placeholder { color:transparent; }
 textarea:focus:-moz-placeholder { color:transparent; }
@@ -109,6 +120,11 @@ input::-webkit-input-placeholder { color: #999999; }
 input:-moz-placeholder { color: #999999; }
 input::-moz-placeholder { color: #999999; }
 input:-ms-input-placeholder { color: #999999; }
+
+select::-webkit-input-placeholder { color: #999999; }
+select:-moz-placeholder { color: #999999; }
+select::-moz-placeholder { color: #999999; }
+select:-ms-input-placeholder { color: #999999; }
 
 textarea::-webkit-input-placeholder { color: #999999; }
 textarea:-moz-placeholder { color: #999999; }
@@ -459,4 +475,66 @@ iframe {
     visibility: visible;
     opacity: 1;
   }
+}
+
+/* custom menu */
+/*the container must be positioned relative:*/
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element:*/
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
+
+/*style the arrow inside the select element:*/
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*style the items (options), including the selected item:*/
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+  user-select: none;
+}
+
+/*style items (options):*/
+.select-items {
+  position: absolute;
+  background-color: DodgerBlue;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+
+/*hide the items when the select box is closed:*/
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.1);
 }
