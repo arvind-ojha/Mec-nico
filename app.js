@@ -14,5 +14,5 @@ app.get('/signup',(req,res)=>{
     res.render('signup')
 })
 app.listen(3000, () => {
-    console.log(`Server started on port`);
+    console.log(`Server started on port 3000`);
 });
